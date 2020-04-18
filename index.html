@@ -193,7 +193,7 @@ $(document).ready(function(){$("#toggle").hide()}),$(document).ready(function(){
 <h4>PUBLISH AN ARTICLE / NEWS</h4>
 <p>• If your articles have a good quality and match to the topics of this magazine, our columns are widely open for you.</p>
 <p>• We are also interested in hearing about any stories you may have. If you have something you'd like to share.., Tell us here!</p>
-<a target=_blank data-scroll href=article.html class="btn btn-default wow wobble" data-wow-offset=50 data-wow-delay=0.6s>POST</a>
+<a onClick="openNav()" class="btn btn-default wow wobble" data-wow-offset=50 data-wow-delay=0.6s>POST</a>
 </div>
 <div class="col-md-4">
 <i class="fa fa-envelope-o"></i>
@@ -309,5 +309,25 @@ $(document).ready(function(){$("#toggle").hide()}),$(document).ready(function(){
 </div>
 </div>
 </footer>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <i  style="font-size: 76px;" class="fa fa-newspaper-o" aria-hidden="true"></i>
+     <a>Send us your awesome articles or news at:</a>
+    <i class="fa fa-envelope-square" aria-hidden="true"></i>
+    <a style="font-size: 1em;" href="mailto:sarvadarshi1@gmail.com">sarvadarshi1@gmail.com</a>
+  </div>
+</div>
 </body>
 </html>
