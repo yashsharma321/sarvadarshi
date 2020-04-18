@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang=en>
 <head>
 <meta charset=utf-8/>
@@ -41,62 +41,6 @@
 <meta name=google-site-verification content=XJ9XKhbz7fs2XZqS-04wFAbEhtwDBQOAKS30BvaDI9A />
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104708796-2"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","UA-104708796-2");</script>
-
-<style>
-.overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0, 0.9);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a,.overlay i {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #fff;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 60px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 60px;
-  right: 35px;
-  }
-}</style>
-
-
-
-
-
 </head>
 <body id=top>
 <div class=preloader>
@@ -157,7 +101,7 @@
 <div class=sub-element>A leading Magazine being published from Siliguri.</div>
 <div class=sub-element>Sarvadarshi - "Sab Par Nazar, Sab ki Khabar"</div>
 </div>
-<a onclick="toggleFullScreen()" href='read-online/index.html' class="btn btn-default wow flip" data-wow-offset=50 data-wow-delay=0.6s>READ NOW</a>
+<a href='read-online' target='_blank' class="btn btn-default wow flip" data-wow-offset=50 data-wow-delay=0.6s>READ NOW</a>
 </div>
 </div>
 </div>
@@ -177,17 +121,6 @@
 <br/><br/>
 </div>
 </center>
-
-
-function fullScreenTgl() {
-    let doc=document,elm=doc.documentElement;
-    if      (elm.requestFullscreen      ) { (!doc.fullscreenElement   ? elm.requestFullscreen()       : doc.exitFullscreen()        ) }
-    else if (elm.mozRequestFullScreen   ) { (!doc.mozFullScreen       ? elm.mozRequestFullScreen()    : doc.mozCancelFullScreen()   ) }
-    else if (elm.msRequestFullscreen    ) { (!doc.msFullscreenElement ? elm.msRequestFullscreen()     : doc.msExitFullscreen()      ) }
-    else if (elm.webkitRequestFullscreen) { (!doc.webkitIsFullscreen  ? elm.webkitRequestFullscreen() : doc.webkitCancelFullscreen()) }
-    else                                  { console.log("Fullscreen support not detected.");                                          }
-    }
-
 <script>var myIndex=0;carousel();function carousel(){var b;var a=document.getElementsByClassName("mySlides");for(b=0;b<a.length;b++){a[b].style.display="none"}myIndex++;if(myIndex>a.length){myIndex=1}a[myIndex-1].style.display="block";setTimeout(carousel,4000)};</script>
 <div class=col-md-12 data-wow-offset=50 data-wow-delay=0.6s>
 <div class=media>
@@ -260,7 +193,7 @@ $(document).ready(function(){$("#toggle").hide()}),$(document).ready(function(){
 <h4>PUBLISH AN ARTICLE / NEWS</h4>
 <p>• If your articles have a good quality and match to the topics of this magazine, our columns are widely open for you.</p>
 <p>• We are also interested in hearing about any stories you may have. If you have something you'd like to share.., Tell us here!</p>
-<a  onclick="openNav()" class="btn btn-default wow wobble" data-wow-offset=50 data-wow-delay=0.6s>POST</a>
+<a target=_blank data-scroll href=article.html class="btn btn-default wow wobble" data-wow-offset=50 data-wow-delay=0.6s>POST</a>
 </div>
 <div class="col-md-4">
 <i class="fa fa-envelope-o"></i>
@@ -376,89 +309,5 @@ $(document).ready(function(){$("#toggle").hide()}),$(document).ready(function(){
 </div>
 </div>
 </footer>
-
-<script>
-/* Get the documentElement (<html>) to display the page in fullscreen */
-var elem = document.documentElement;
-
-/* View in fullscreen */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
-}
-
-/* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) { /* Firefox */
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE/Edge */
-    document.msExitFullscreen();
-  }
-}
-</script>
-
-
-
-
-
-
-
-
-
-
-
-<script>
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-</script>
-
-
-
-function toggleFullScreen() {
-  if ((document.fullScreenElement && document.fullScreenElement !== null) ||    
-   (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-    if (document.documentElement.requestFullScreen) {  
-      document.documentElement.requestFullScreen();  
-    } else if (document.documentElement.mozRequestFullScreen) {  
-      document.documentElement.mozRequestFullScreen();  
-    } else if (document.documentElement.webkitRequestFullScreen) {  
-      document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);  
-    }  
-  } else {  
-    if (document.cancelFullScreen) {  
-      document.cancelFullScreen();  
-    } else if (document.mozCancelFullScreen) {  
-      document.mozCancelFullScreen();  
-    } else if (document.webkitCancelFullScreen) {  
-      document.webkitCancelFullScreen();  
-    }  
-  }  
-}<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <i class="fa fa-file-text" aria-hidden="true"></i>
-     <a>Mail us your awesome articles or news at:</a>
-    <i class="fa fa-envelope-square" aria-hidden="true"></i>
-	<p>sarvadarshi1@gmail.com</p>
-  </div>
-</div>
-
-
 </body>
 </html>
