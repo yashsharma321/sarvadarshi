@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery
+	galleryTitle="Sarvadarshi - Shree Moti Publications"
+>
+  <image imageURL="images/Shree-Moti-Panchang.jpg"
+	thumbURL="thumbs/Shree-Moti-Panchang.jpg"
+	linkURL="images/Shree-Moti-Panchang.jpg"
+	linkTarget="_blank">
+	<caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">SHREE MOTI PANCHANG</h1>]]></caption>
+  </image>
+  <image imageURL="images/Rajasthan-Haryana-temple.jpg"
+	thumbURL="thumbs/Rajasthan-Haryana-temple.jpg"
+	linkURL="images/Rajasthan-Haryana-temple-directory.jpg"
+	linkTarget="_blank">
+	<caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">RAJASTHAN HARYANA MANDIR DIRECTORY</h1>]]></caption>
+  </image>
+  <image imageURL="images/Shree-Moti-Calender.jpg"
+	thumbURL="thumbs/Shree-Moti-Calender.jpg"
+	linkURL="images/Shree-Moti-Calender.jpg"
+	linkTarget="_blank">
+    <caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">SHREE MOTI WALL CALENDER</h1>]]></caption>
+  </image>
+  <image imageURL="images/Shree-Moti-Pocket-Calender.jpg"
+	thumbURL="thumbs/Shree-Moti-Pocket-Calender.jpg"
+	linkURL="images/Shree-Moti-Pocket-Calender.jpg"
+	linkTarget="_blank">
+	<caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">SHREE MOTI POCKET CALENDER</h1>]]></caption>
+  </image>
+  <image imageURL="images/shree-moti-kilkari.jpg"
+	thumbURL="thumbs/shree-moti-kilkari.jpg"
+	linkURL="images/shree-moti-kilkari.jpg"
+	linkTarget="_blank">
+	<caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">SHREE MOTI KILKARI</h1>]]></caption>
+  </image>
+  <image imageURL="images/Shree-Moti-Vaivahik-Pustika.jpg"
+	thumbURL="thumbs/Shree-Moti-Vaivahik-Pustika.jpg"
+	linkURL="images/Shree-Moti-Vaivahik-Pustika.jpg"
+	linkTarget="_blank">
+	<caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">VAIVAHIK KARYAKRAM PUSTIKA</h1>]]></caption>
+  </image>
+  <image imageURL="images/shree-moti-marriage-drctry.jpg"
+	thumbURL="thumbs/shree-moti-marriage-drctry.jpg"
+	linkURL="images/shree-moti-marriage-drctry.jpg"
+	linkTarget="_blank">
+	<caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">MARRIAGE SHOPPING DIRECTORY</h1>]]></caption>
+  </image>
+  <image imageURL="images/jewellery-book-hindi.jpg"
+	thumbURL="thumbs/jewellery-book-hindi.jpg"
+	linkURL="images/jewellery-book-hindi.jpg"
+	linkTarget="_blank">
+        <caption><![CDATA[<h1 style="background:rgba(26, 27, 25, 0.7);">SHREE MOTI JEWELLERY</h1>]]></caption>
+  </image>
+</juiceboxgallery>
