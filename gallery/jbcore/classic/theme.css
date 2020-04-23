@@ -780,6 +780,8 @@ div.jb-status-loading {
 		url('fonts/juicebox.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
+	
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
