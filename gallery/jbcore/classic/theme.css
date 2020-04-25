@@ -15,6 +15,7 @@
 body
 {
 	-ms-overflow-style: scrollbar;
+	margin:0px;
 }
  
 .juicebox-gallery
