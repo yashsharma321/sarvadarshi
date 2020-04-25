@@ -113,13 +113,16 @@
                         </div>
                     
                     <div class="col-md-6 col-sm-6 col-xs-12 wow flash" data-wow-offset="150" data-wow-delay="1.6s">
-                            <form name="Advertisement" data-netlify="true" method="post">
+                            <form name="Advertisement" method=post netlify-honeypot="bot" data-netlify="true">
+		<p class=hidden>
+		    <label>Don’t fill this out if you're human:</label> 
+		    <input name=bot class=form-control>
+		</p>
                      <label>NAME</label>
-                                        <input name="Fullname" type="text" class="form-control" required >
+                                        <input name="Fullname" type="text" class="form-control" required>
                      <label>BRAND NAME</label>
                                         <input name="Shop" type="text" class="form-control">
-
-                    <label>CONTACT NUMBER</label>
+		    <label>CONTACT NUMBER</label>
                     <input type="tel" name="Phone" class="form-control" required>
                      <label>YOUR MESSAGE (IF ANY): </label>
                        <textarea name="Message" rows="2" class="form-control"></textarea>
