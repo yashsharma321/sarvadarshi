@@ -99,12 +99,16 @@
 <h2>SUBSCRIBE<span> सर्वदर्शी</span></h2>
 </div>
 <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-offset=50 data-wow-delay=0.6s>
-<form name=Membership data-netlify="true" method=post>
+<form name=Membership method=post netlify-honeypot="bot" data-netlify="true">
+<p class=hidden>
+    <label>Don’t fill this out if you're human:</label> 
+    <input name=bot>
+</p>
 <label>FULL NAME</label>
 <input name=Firstname type=text class=form-control placeholder="First Name" required>
 <input name=Lastname type=text class=form-control placeholder="Last Name">
 <label>ADDRESS</label>
-<textarea name=Address class=form-control placeholder="Address" required></textarea>
+<textarea name=Address class=form-control placeholder="Address" required></textarea>
 <input name=City type=text class=form-control placeholder=City required>
 <input name=State type=text class=form-control placeholder=State required>
 <input name=Pin type=tel class=form-control pattern=[0-9]{6} placeholder='Pin Code' required>
