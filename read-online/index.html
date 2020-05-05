@@ -10,8 +10,7 @@
         <meta name="keywords" content="sarvadarshi, siliguri magazine online, SILIGURI NEWS today, North bengal news online, hindi magazine in siliguri, hindi monthly, sarvadarshi patrika, e-newspaper in siliguri, siliguri city, puran chandra sharma, journalist siliguri, News About Siliguri, Siliguri Darjeeling News, Siliguri Monthly News Paper, Siliguri Election News, Siliguri Hindi News, Siliguri India News, Siliguri local News read online, Siliguri Gangtok News online, Siliguri News Sukna, Siliguri News Update, North Bengal News online, North Bengal News in Hindi"/>
     	<meta name="description" content="North Bengal, Sikkim, Bhutan, North-East India News read online in Hindi at Sarvadarshi-A Leading Hindi Monthly News Magazine being published from Siliguri"/>
         <meta name="author" content="sarvadarshi"/>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-        <meta property="og:title" content="Explore latest news &amp; articles"/>
+        <meta property="og:title" content="Explore latest news &amp; articles - Sarvadarshi Magazine Siliguri "/>
         <meta property="og:description" content="North-East India, North Bengal & Sikkim news & articles">
         <meta property="og:url" content="https://sarvadarshi.in/read-online/"/>
         <meta property=og:type content="article"/>
@@ -26,7 +25,15 @@
                 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../favicon.ico" type="image/x-icon"/>
        <style>
         #loading { position: absolute; width: 100%; height: 100%; background: url('spinner.svg') no-repeat center center;}
-        body{overflow: hidden;margin: 0;padding:0;} #bdsa{width:100%;margin:0;min-height:100%;height:100%}html>body#bdsa{height:auto}#bdsa iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+   #load
+{
+	    width:100%;
+	    height:100%;
+	    position:fixed;
+	    z-index:9999;
+	    background:url("https://www.animatedimages.org/data/media/152/animated-newspaper-image-0026.gif") no-repeat center center rgba(0,0,0,0.25)
+}
+        body{overflow: hidden;margin: 0;padding:0;} #krishna{width:100%;margin:0;min-height:100%;height:100%}html>body#krishna{height:auto}#krishna iframe{position:absolute;top:0;left:0;width:100%;height:100%;min-height:350px}
         </style>
                
         <script type="application/ld+json">
@@ -71,12 +78,28 @@
 </script>
         
 </head>
+	
     <body oncontextmenu="return false" id=top>
-          <div id="loading"></div>
-        <div id="bdsa">
+          <div id="load"></div>
+        <div id="krishna">
 <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=fvh30nk1w&bgcolor=EEEEEE&t=1542658076" width="100%" height="100%" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
         </div>
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e9b8bca317c4bb5"></script>
+	    
+<script>
+document.onreadystatechange = function () {
+var state = document.readyState
+if (state == 'interactive') {
+document.getElementById('krishna').style.visibility="hidden";
+} else if (state == 'complete') {
+setTimeout(function(){
+document.getElementById('interactive');
+document.getElementById('load').style.visibility="hidden";
+document.getElementById('krishna').style.visibility="visible";
+},1000);
+}
+}
+</script>
      </body>
 </html>
