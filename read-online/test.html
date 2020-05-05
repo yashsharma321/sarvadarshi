@@ -26,7 +26,13 @@
                 <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../favicon.ico" type="image/x-icon"/>
                 <link rel="apple-touch-icon-precomposed" sizes="180x180" href="../favicon.ico" type="image/x-icon"/>
        <style>
-        #loading { position: absolute; width: 100%; height: 100%; background: url("https://d33wubrfki0l68.cloudfront.net/1ccaee13aff004e1670a09ccfd30038cd7c5c711/c523d/read-online/spinner.svg") no-repeat center center;}
+               #loading {
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #fff url('https://cdn.clipart.email/1e4826dd41ed710304b697f3b7a60eda_24-fun-gif-png-loading-images-on-cahoi-png-2020_200-200.gif') no-repeat center center;
+z-index: 9999;
+}
         body{overflow: hidden;margin: 0;padding:0;} #bdsa{width:100%;margin:0;height:100%}html>body#bdsa{height:auto;}#bdsa iframe{position:absolute;top:0;left:0;width:100%;height:100%;min-height:350px}
         #load{
     width:100%;
@@ -65,24 +71,15 @@
 }
 </script>
 <script>
-	document.onreadystatechange = function () {
-  var state = document.readyState
-  if (state == 'interactive') {
-       document.getElementById('bdsa').style.visibility="hidden";
-  } else if (state == 'complete') {
-      setTimeout(function(){
-         document.getElementById('interactive');
-         document.getElementById('load').style.visibility="hidden";
-         document.getElementById('bdsa').style.visibility="visible";
-      },1000);
-  }
-}
-	    </script>
+jQuery(document).ready(function() {
+    jQuery('#loading').fadeOut(3000);
+});
+</script>
        
         
 </head>
     <body oncontextmenu="return false" id=top>
-          <div id="load"></div>
+          <div id="loading"></div>
         <div id="bdsa">
 		<iframe src='https://online.pubhtml5.com/hsve/osei/'  seamless='seamless' scrolling='no' frameborder='0' allowtransparency='true' allowfullscreen='true' ></iframe>
         </div>
