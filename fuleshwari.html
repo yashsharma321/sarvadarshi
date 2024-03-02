@@ -20,7 +20,6 @@
 <meta property="og:image:type" content="image/jpeg"/>
 <meta property="og:site_name" content="fuleshwari"/>
 
-<link rel="image_src" type="image/jpeg" href="https://sarvadarshi.com/images/fuleshwari.jpg"/>
 <link rel="shortcut icon" href="../favicon.ico" sizes="32x32" type="image/x-icon"/>
 <link rel="apple-touch-icon-precomposed" href="../favicon.ico" type="image/x-icon"/>
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../favicon.ico" type="image/x-icon"/>
@@ -59,21 +58,5 @@ html, body {
 <body>
 <iframe id="magazine" src="//s3.amazonaws.com/online.anyflip.com/bupa/ffie/index.html" allowfullscreen="allowfullscreen" style="width:100%;height:100%;min-height:350px;" width="100%" height="100%" hspace="0" vspace="0" frameborder="0" scrolling="no"></iframe>
 <a href='https://sarvadarshi.com/assets/fuleshwari.pdf' class="download" target="_blank">▼</a>
-
-<script>
-	// Wait for the iframe content to load
-	window.onload = function() {
-		// Access the iframe content
-		var iframe = document.getElementById('magazine');
-		var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-		
-		// Find the div with id 'logoBar' and hide it
-		var logoBarDiv = iframeDoc.getElementById('logoBar');
-		if (logoBarDiv) {
-		logoBarDiv.style.display = 'none';
-		}
-	};
-</script>
-
 </body>
 </html>
